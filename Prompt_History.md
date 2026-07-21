@@ -51,7 +51,7 @@ Quá trình phát triển được chia thành 5 Phase (giai đoạn) rõ ràng 
 **Tinh chỉnh (Refinement):**
 - Khi AI viết Service check điều kiện, tôi nhận thấy có rủi ro `NullPointerException`. Tôi đã nhắc AI: *"Đảm bảo check NULL cho creditScore trước khi so sánh với 600, vì đây là Integer"*. Nhờ vậy AI sinh ra code an toàn `if (customer.getCreditScore() == null || ...)`.
 
-### Phase 5: Refactor nâng cao (Dành trọn điểm 100)
+### Phase 5: Refactor nâng cao 
 **Mục tiêu:** Nâng cấp dự án theo tiêu chuẩn Enterprise (Khắc phục lỗi bảo mật và tối ưu Data).
 **Prompt đã dùng:**
 > "Hãy đóng vai Developer, refactor lại toàn bộ tính năng Loan Application để áp dụng 3 giải pháp nâng cao:
